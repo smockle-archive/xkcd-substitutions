@@ -1,0 +1,12 @@
+{
+  "name": "XKCD Substitutions",
+  "version": "0.1",
+  "description": "Chrome extension to implement http://xkcd.com/1288/.",
+  "permissions": ["http://*/*", "tabs"],
+  "content_scripts": [{
+    "js": ["xkcd-substitutions.js"],
+    "matches": ["http://*/*"],
+    "run_at": "document_start"
+  }],
+  "manifest_version": 2
+}
