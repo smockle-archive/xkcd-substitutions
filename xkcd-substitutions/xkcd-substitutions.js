@@ -80,6 +80,8 @@ if (xkcd.walk === undefined) {
             node.nodeValue = node.nodeValue.replace("google glass", "virtual boy");
             node.nodeValue = node.nodeValue.replace("Google glass", "Virtual boy");
             node.nodeValue = node.nodeValue.replace("Google Glass", "Virtual Boy");
+            node.nodeValue = node.nodeValue.replace("smartphones", "pokédexes");
+            node.nodeValue = node.nodeValue.replace("Smartphones", "Pokédexes");
             node.nodeValue = node.nodeValue.replace("smartphone", "pokédex");
             node.nodeValue = node.nodeValue.replace("Smartphone", "Pokédex");
             node.nodeValue = node.nodeValue.replace("electric", "atomic");
