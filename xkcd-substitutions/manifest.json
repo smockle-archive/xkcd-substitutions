@@ -8,5 +8,8 @@
     "matches": ["http://*/*"],
     "run_at": "document_start"
   }],
+  "icons": { 
+    "128": "icon_128.png" 
+  },
   "manifest_version": 2
 }
