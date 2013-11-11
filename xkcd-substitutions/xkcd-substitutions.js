@@ -77,6 +77,9 @@ if (xkcd.walk === undefined) {
             node.nodeValue = node.nodeValue.replace("Rebuilding", "Avenging");
             node.nodeValue = node.nodeValue.replace("space", "spaaace");
             node.nodeValue = node.nodeValue.replace("Space", "Spaaace");
+            node.nodeValue = node.nodeValue.replace("google glasses", "virtual boys");
+            node.nodeValue = node.nodeValue.replace("Google glasses", "Virtual boys");
+            node.nodeValue = node.nodeValue.replace("Google Glasses", "Virtual Boys");
             node.nodeValue = node.nodeValue.replace("google glass", "virtual boy");
             node.nodeValue = node.nodeValue.replace("Google glass", "Virtual boy");
             node.nodeValue = node.nodeValue.replace("Google Glass", "Virtual Boy");
@@ -88,8 +91,14 @@ if (xkcd.walk === undefined) {
             node.nodeValue = node.nodeValue.replace("Electric", "Atomic");
             node.nodeValue = node.nodeValue.replace("senator", "elf-lord");
             node.nodeValue = node.nodeValue.replace("Senator", "Elf-lord");
-            node.nodeValue = node.nodeValue.replace("car", "cat");
-            node.nodeValue = node.nodeValue.replace("Car", "Cat");
+            node.nodeValue = node.nodeValue.replace(/([^a-zA-Z0-9]|^)car([.])/g, " cat.");
+            node.nodeValue = node.nodeValue.replace(/([^a-zA-Z0-9]|^)Car([.])/g, " Cat.");
+            node.nodeValue = node.nodeValue.replace(/([^a-zA-Z0-9]|^)car([^a-zA-Z0-9]|$)/g, " cat ");
+            node.nodeValue = node.nodeValue.replace(/([^a-zA-Z0-9]|^)Car([^a-zA-Z0-9]|$)/g, " Cat ");
+            node.nodeValue = node.nodeValue.replace(/([^a-zA-Z0-9]|^)cars([.])/g, " cats.");
+            node.nodeValue = node.nodeValue.replace(/([^a-zA-Z0-9]|^)Cars([.])/g, " Cats.");
+            node.nodeValue = node.nodeValue.replace(/([^a-zA-Z0-9]|^)cars([^a-zA-Z0-9]|$)/g, " cats ");
+            node.nodeValue = node.nodeValue.replace(/([^a-zA-Z0-9]|^)Cars([^a-zA-Z0-9]|$)/g, " Cats ");
             node.nodeValue = node.nodeValue.replace("election", "eating contest");
             node.nodeValue = node.nodeValue.replace("Election", "Eating contest");
             node.nodeValue = node.nodeValue.replace("congressional leaders", "river spirits");
